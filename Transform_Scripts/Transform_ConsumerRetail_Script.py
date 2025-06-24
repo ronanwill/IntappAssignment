@@ -10,7 +10,7 @@ import pandas as pd
 
 
 # Loading Consumer Retail and Healthcare Pipeline Excel Sheet
-df_ConsumerRetail = pd.read_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/ConsumerRetail.xlsx', engine = 'openpyxl')
+df_ConsumerRetail = pd.read_excel('/Clean_DataFiles/ConsumerRetail.xlsx', engine = 'openpyxl')
 
 
 
@@ -110,4 +110,4 @@ df_ConsumerRetail['Banker Email'] = df_ConsumerRetail['Banker Email'].str.replac
 
 
 
-df_ConsumerRetail.to_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/ConsumerRetail.xlsx', index=False)
+df_ConsumerRetail.to_excel('/Transformed_DataFiles/ConsumerRetail.xlsx', index=False)
