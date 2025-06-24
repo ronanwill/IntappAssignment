@@ -9,9 +9,9 @@ Modifications
 import pandas as pd
 
 # Loading from the Target Table Directory 
-df_Contacts_old= pd.read_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/Contacts.xlsx', engine = 'openpyxl')
-df_PEComps = pd.read_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/PEComps.xlsx', engine = 'openpyxl')
-df_company = pd.read_excel('/Users/ronanwill/DE_Assignment/Final_Tables/company.xlsx', engine = 'openpyxl')
+df_Contacts_old= pd.read_excel('/Transformed_DataFiles/Contacts.xlsx', engine = 'openpyxl')
+df_PEComps = pd.read_excel('/Transformed_DataFiles/PEComps.xlsx', engine = 'openpyxl')
+df_company = pd.read_excel('/Final_Tables/company.xlsx', engine = 'openpyxl')
 
 
 # CONCATING the Name columns from Contacts df and the PE Companies df
@@ -142,5 +142,5 @@ df_contacts = df_contacts[new_col_order]
 
 
 print(df_contacts)
-df_contacts.to_excel('/Users/ronanwill/DE_Assignment/Final_Tables/contacts.xlsx', index=False)
+df_contacts.to_excel('/Final_Tables/contacts.xlsx', index=False)
 
