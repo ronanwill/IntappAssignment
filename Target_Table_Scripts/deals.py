@@ -9,9 +9,9 @@ Modifications
 import pandas as pd
 
 # Loading from the Target Table Directory 
-df_ConsumerRetail = pd.read_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/ConsumerRetail.xlsx', engine = 'openpyxl')
-df_BusinessServices = pd.read_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/BusinessServices.xlsx', engine = 'openpyxl')
-df_company = pd.read_excel('/Users/ronanwill/DE_Assignment/Final_Tables/company.xlsx', engine = 'openpyxl')
+df_ConsumerRetail = pd.read_excel('/Transformed_DataFiles/ConsumerRetail.xlsx', engine = 'openpyxl')
+df_BusinessServices = pd.read_excel('/Transformed_DataFiles/BusinessServices.xlsx', engine = 'openpyxl')
+df_company = pd.read_excel('/Final_Tables/company.xlsx', engine = 'openpyxl')
 
 
 # CONCATING Both dfs - Consumer Retail & Business Servies
@@ -88,4 +88,4 @@ new_col_order = ['deal_id', 'company_id', 'project_name', 'transaction_type', 's
 df_deals = df_deals[new_col_order]
 
 print(df_deals)
-df_deals.to_excel('/Users/ronanwill/DE_Assignment/Final_Tables/deals.xlsx', index=False)
+df_deals.to_excel('/Final_Tables/deals.xlsx', index=False)
