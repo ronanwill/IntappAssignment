@@ -10,8 +10,8 @@ import pandas as pd
 
 
 # Loading Both Events Excel Sheets (Tier 1's & Tier 2's)
-df_Events_LPD = pd.read_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/EventsLPD.xlsx', engine = 'openpyxl')
-df_Events_MRC = pd.read_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/EventsMRC.xlsx', engine = 'openpyxl')
+df_Events_LPD = pd.read_excel('/Clean_DataFiles/EventsLPD.xlsx', engine = 'openpyxl')
+df_Events_MRC = pd.read_excel('/Clean_DataFiles/EventsMRC.xlsx', engine = 'openpyxl')
 
 
 
@@ -30,6 +30,6 @@ df_Events = pd.concat([df_Events_LPD, df_Events_MRC], ignore_index=True)
 df_Events['Tier Status'] = 2
 
 
-df_Events.to_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/Events.xlsx', index=False)
+df_Events.to_excel('/Transformed_DataFiles/Events.xlsx', index=False)
 
 print(df_Events)
