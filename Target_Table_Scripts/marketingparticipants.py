@@ -10,12 +10,12 @@ import pandas as pd
 
 
 # Loading from the Target Table Directory 
-df_Contacts_Old= pd.read_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/Contacts.xlsx', engine = 'openpyxl')
-df_ConsumerRetail = pd.read_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/ConsumerRetail.xlsx', engine = 'openpyxl')
-df_BusinessServices = pd.read_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/BusinessServices.xlsx', engine = 'openpyxl')
-df_Events = pd.read_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/Events.xlsx', engine = 'openpyxl')
-df_company = pd.read_excel('/Users/ronanwill/DE_Assignment/Finial_DataFile/company.xlsx', engine = 'openpyxl')
-df_contacts = pd.read_excel('/Users/ronanwill/DE_Assignment/Finial_DataFile/contacts.xlsx', engine = 'openpyxl')
+df_Contacts_Old= pd.read_excel('/Transformed_DataFiles/Contacts.xlsx', engine = 'openpyxl')
+df_ConsumerRetail = pd.read_excel('/Transformed_DataFiles/ConsumerRetail.xlsx', engine = 'openpyxl')
+df_BusinessServices = pd.read_excel('/Transformed_DataFiles/BusinessServices.xlsx', engine = 'openpyxl')
+df_Events = pd.read_excel('/Transformed_DataFiles/Events.xlsx', engine = 'openpyxl')
+df_company = pd.read_excel('/Finial_DataFile/company.xlsx', engine = 'openpyxl')
+df_contacts = pd.read_excel('/Finial_DataFile/contacts.xlsx', engine = 'openpyxl')
 
 
 # CONCATING the Name columns from Consumer Retail df and Business Services
@@ -112,5 +112,5 @@ df_marketpart = df_marketpart[new_col_order]
 
 
 print(df_marketpart)
-df_marketpart.to_excel('/Users/ronanwill/DE_Assignment/Final_Tables/marketing_participants.xlsx', index=False)
+df_marketpart.to_excel('/Final_Tables/marketing_participants.xlsx', index=False)
 
