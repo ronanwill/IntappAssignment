@@ -10,7 +10,7 @@ import pandas as pd
 
 
 # Loading Business Services Pipeline Excel Sheet
-df_BusinessServices = pd.read_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/BusinessServices.xlsx', engine = 'openpyxl')
+df_BusinessServices = pd.read_excel('/Clean_DataFiles/BusinessServices.xlsx', engine = 'openpyxl')
 
 
 
@@ -114,4 +114,4 @@ df_BusinessServices['Invest. Bank'] = df_BusinessServices['Invest. Bank'].str.st
 
 
 
-df_BusinessServices.to_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/BusinessServices.xlsx', index=False)
+df_BusinessServices.to_excel('/Transformed_DataFiles/BusinessServices.xlsx', index=False)
