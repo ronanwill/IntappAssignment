@@ -10,7 +10,7 @@ import pandas as pd
 
 
 # Loading PE Comps Excel Sheet
-df_PEComps = pd.read_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/PEComps.xlsx', engine = 'openpyxl')
+df_PEComps = pd.read_excel('/Clean_DataFiles/PEComps.xlsx', engine = 'openpyxl')
 
 
 # Formatting the Sectors, Sample Portfolio Companies & Comments columns to remove the - and space. It will also replace the new line with a comma
@@ -86,4 +86,4 @@ df_PEComps = df_PEComps.drop('Contact 2', axis=1)
 df_PEComps['Tier status 1'] = df_PEComps['Name 1'].apply(lambda x: 2 if pd.notna(x) and str(x).strip() != '' else '')
 df_PEComps['Tier status 2'] = df_PEComps['Name 2'].apply(lambda x: 2 if pd.notna(x) and str(x).strip() != '' else '')
 
-df_PEComps.to_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/PEComps.xlsx', index=False)
+df_PEComps.to_excel('/Transformed_DataFiles/PEComps.xlsx', index=False)
