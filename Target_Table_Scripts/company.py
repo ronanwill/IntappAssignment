@@ -10,9 +10,9 @@ import pandas as pd
 
 
 # Loading from the Target Table Directory 
-df_ConsumerRetail = pd.read_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/ConsumerRetail.xlsx', engine = 'openpyxl')
-df_BusinessServices = pd.read_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/BusinessServices.xlsx', engine = 'openpyxl')
-df_PEComps = pd.read_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/PEComps.xlsx', engine = 'openpyxl')
+df_ConsumerRetail = pd.read_excel('/Transformed_DataFiles/ConsumerRetail.xlsx', engine = 'openpyxl')
+df_BusinessServices = pd.read_excel('/Transformed_DataFiles/BusinessServices.xlsx', engine = 'openpyxl')
+df_PEComps = pd.read_excel('/Transformed_DataFiles/PEComps.xlsx', engine = 'openpyxl')
 
 
 
@@ -123,5 +123,5 @@ df_company = df_company[new_col_order]
 
 
 print(df_company)
-df_company.to_excel('/Users/ronanwill/DE_Assignment/Final_Tables/company.xlsx', index=False)
+df_company.to_excel('/Final_Tables/company.xlsx', index=False)
 
