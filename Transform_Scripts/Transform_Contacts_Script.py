@@ -10,8 +10,8 @@ import pandas as pd
 
 
 # Loading Both Contact Excel Sheets (Tier 1's & Tier 2's)
-df_Contacts_T1 = pd.read_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/ContactsT1.xlsx', engine = 'openpyxl')
-df_Contacts_T2 = pd.read_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/ContactsT2.xlsx', engine = 'openpyxl')
+df_Contacts_T1 = pd.read_excel('/Clean_DataFiles/ContactsT1.xlsx', engine = 'openpyxl')
+df_Contacts_T2 = pd.read_excel('/Clean_DataFiles/ContactsT2.xlsx', engine = 'openpyxl')
 
 
 
@@ -60,4 +60,4 @@ df_Contacts_T2['Secondary Phone'] = df_Contacts_T2['Secondary Phone'].astype('ob
 df_Contacts = pd.concat([df_Contacts_T1, df_Contacts_T2], ignore_index=True)
 
 
-df_Contacts.to_excel('/Users/ronanwill/DE_Assignment/Transformed_DataFiles/Contacts.xlsx', index=False)
+df_Contacts.to_excel('/Transformed_DataFiles/Contacts.xlsx', index=False)
