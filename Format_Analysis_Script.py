@@ -18,13 +18,13 @@ import pandas as pd
 #        - Events (Leaders and Partners Dinner & 2019 Market Re-Cap)
 
 
-df_BusinessServices = pd.read_excel('/Users/ronanwill/DE_Assignment/IntappDataEngineerAssessment/Business Services Pipeline.xlsx', engine = 'openpyxl')
-df_ConsumerRetail = pd.read_excel('/Users/ronanwill/DE_Assignment/IntappDataEngineerAssessment/Consumer Retail and Healthcare Pipeline.xlsx', engine = 'openpyxl')
-df_PEComps = pd.read_excel('/Users/ronanwill/DE_Assignment/IntappDataEngineerAssessment/PE Comps.xlsx', engine = 'openpyxl')
-df_Contacts_T1 = pd.read_excel('/Users/ronanwill/DE_Assignment/IntappDataEngineerAssessment/Contacts.xlsx', sheet_name = "Tier 1's", engine = 'openpyxl')
-df_Contacts_T2 = pd.read_excel('/Users/ronanwill/DE_Assignment/IntappDataEngineerAssessment/Contacts.xlsx', sheet_name = "Tier 2's", engine = 'openpyxl')
-df_Events_LPD = pd.read_excel('/Users/ronanwill/DE_Assignment/IntappDataEngineerAssessment/Events.xlsx', sheet_name = "Leaders and Partners Dinner", engine = 'openpyxl')
-df_Events_MRC = pd.read_excel('/Users/ronanwill/DE_Assignment/IntappDataEngineerAssessment/Events.xlsx', sheet_name = "2019 Market Re-Cap", engine = 'openpyxl')
+df_BusinessServices = pd.read_excel('Business Services Pipeline.xlsx', engine = 'openpyxl')
+df_ConsumerRetail = pd.read_excel('Consumer Retail and Healthcare Pipeline.xlsx', engine = 'openpyxl')
+df_PEComps = pd.read_excel('PE Comps.xlsx', engine = 'openpyxl')
+df_Contacts_T1 = pd.read_excel('Contacts.xlsx', sheet_name = "Tier 1's", engine = 'openpyxl')
+df_Contacts_T2 = pd.read_excel('Contacts.xlsx', sheet_name = "Tier 2's", engine = 'openpyxl')
+df_Events_LPD = pd.read_excel('Events.xlsx', sheet_name = "Leaders and Partners Dinner", engine = 'openpyxl')
+df_Events_MRC = pd.read_excel('Events.xlsx', sheet_name = "2019 Market Re-Cap", engine = 'openpyxl')
 
 
 
@@ -114,10 +114,10 @@ def column_level_max_lengths(df):
 
 
 
-df_BusinessServices.to_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/BusinessServices.xlsx', index=False)
-df_ConsumerRetail.to_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/ConsumerRetail.xlsx', index=False)
-df_PEComps.to_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/PEComps.xlsx', index=False)
-df_Contacts_T1.to_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/Contacts.xlsx', sheet_name="Tier 1's", index=False)
-df_Contacts_T2.to_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/Contacts.xlsx', sheet_name="Tier 2's", index=False)
-df_Events_LPD.to_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/Events.xlsx', sheet_name="Leaders and Partners Dinner", index=False)
-df_Events_MRC.to_excel('/Users/ronanwill/DE_Assignment/Clean_DataFiles/Events.xlsx', sheet_name="2019 Market Re-Cap", index=False)
+df_BusinessServices.to_excel('BusinessServices.xlsx', index=False)
+df_ConsumerRetail.to_excel('/Clean_DataFiles/ConsumerRetail.xlsx', index=False)
+df_PEComps.to_excel('/Clean_DataFiles/PEComps.xlsx', index=False)
+df_Contacts_T1.to_excel('/Clean_DataFiles/Contacts.xlsx', sheet_name="Tier 1's", index=False)
+df_Contacts_T2.to_excel('/Clean_DataFiles/Contacts.xlsx', sheet_name="Tier 2's", index=False)
+df_Events_LPD.to_excel('/Clean_DataFiles/Events.xlsx', sheet_name="Leaders and Partners Dinner", index=False)
+df_Events_MRC.to_excel('Clean_DataFiles/Events.xlsx', sheet_name="2019 Market Re-Cap", index=False)
